@@ -28,6 +28,6 @@ class Owner
   end
   
   def cats
-    all_cats = Cats.all
+    Cats.all.select{|cat| cat.owner == self}
   end
 end
