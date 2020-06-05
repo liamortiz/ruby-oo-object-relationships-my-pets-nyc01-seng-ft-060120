@@ -53,7 +53,7 @@ class Owner
   end
   
   def sell_pets
-    dogs.cats
+    cats.concat(dogs).map{|pet| pet.mood = "nervous"}
   end
     
 end
