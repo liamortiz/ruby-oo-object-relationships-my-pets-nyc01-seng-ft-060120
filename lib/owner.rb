@@ -4,8 +4,6 @@ require_relative './dog.rb'
 class Owner
   attr_reader :name, :species
   @@all = []
-  @@cats = []
-  @@dogs = []
   
   def initialize(name)
     @species = "human"
@@ -29,7 +27,7 @@ class Owner
     @@all = []
   end
   
-  def buy_cat
-    new_cat = Cat.new()
+  def cats
+    all_cats = Cats.all
   end
 end
