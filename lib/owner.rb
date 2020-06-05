@@ -60,7 +60,7 @@ class Owner
   end
   
   def list_pets
-    cats.concat(dogs)
+    "I have #{@owner.dogs.count}dog(s), and #{@owner.cats.count} cat(s)."
   end
     
 end
