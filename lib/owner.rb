@@ -1,5 +1,6 @@
 require_relative './cat.rb'
 require_relative './dog.rb'
+require 'pry'
 
 class Owner
   attr_reader :name, :species
@@ -28,6 +29,7 @@ class Owner
   end
   
   def cats
+    binding.pry
     Cats.all.select{|cat| cat.owner == self}
   end
 end
