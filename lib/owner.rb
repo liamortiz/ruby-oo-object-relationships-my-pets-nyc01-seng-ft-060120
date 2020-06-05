@@ -58,5 +58,9 @@ class Owner
       pet.owner = nil
     end
   end
+  
+  def list_pets
+    cats.concat(dogs)
+  end
     
 end
